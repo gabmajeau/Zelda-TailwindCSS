@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Triforce';
+  src: url('assets/Triforce.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-zelda {
+  font-family: 'Triforce', sans-serif;
+}
+
+
+#volume-control {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#volume-control.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+  .fade-link {
+    transition: opacity 0.5s ease;
+  }
+  .fade-link.fade-out {
+    opacity: 0;
+  }
+

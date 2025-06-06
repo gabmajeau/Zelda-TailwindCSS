@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Uma carta de amor a The Legend of Zelda</title>
+    <link rel="stylesheet" href="style.css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="font-sans text-white bg-black">
+    
+    <div id="fadeOverlay" class="fixed top-0 left-0 w-full h-full bg-black opacity-0 pointer-events-none transition-opacity duration-[2000ms] z-50"></div>
+    <audio id="audio-inicio" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210074/lullaby_szozt8.mp3"></audio>
+    <audio id="audio-ocarina" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210073/oot_lhvhdq.mp3"></audio>
+    <audio id="audio-majoras" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210073/mm_gjx36l.mp3"></audio>
+    <audio id="audio-windwaker" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210078/ww_ettmdt.mp3"></audio>
+    <audio id="audio-twilight" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210077/tp_u6g9fz.mp3"></audio>
+    <audio id="audio-skyward" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210074/ss_fveray.mp3"></audio>
+    <audio id="audio-botw" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210074/botw_agzito.mp3"></audio>
+    <audio id="audio-tears" src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210075/totk_ekj2un.mp3"></audio>
+
+    <audio id="soundOn" src="musicas/button/on.wav"></audio>
+    <audio id="soundOff" src="musicas/button/off.wav"></audio>
+
+
+    <script src="script/som.js" defer></script>
+
+    <main
+      class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
+    >
+    <div id="volume-control" class="fixed bottom-6 right-6 bg-opacity-50 backdrop-blur-md p-4 rounded-xl shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50">
+  <label for="volume" class="block text-white text-sm mb-2 text-red-600"></label>
+  <input type="range" id="volume" min="0" max="1" step="0.01"
+         class="w-40 accent-green-500 cursor-pointer">
+</div>
+
+
+      <section
+  id="inicio"
+  class="h-screen bg-green-900 relative flex flex-col items-center justify-center text-center snap-start px-4 py-10"
+>
+ 
+  <img src="img/moldura.png" class="absolute bottom-50 left-5 w-25 h-auto" alt="decoração esquerda" />
+  <img src="img/moldura 2.png" class="absolute bottom-50 right-5 w-25 h-auto" alt="decoração direita" />
+
+  <button
+    id="startMusic"
+    class="absolute top-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black font-bold px-6 py-3 rounded hover:scale-105 transition z-20"
+  >
+    Ligar Música
+  </button>
+
+
+  <div class="flex flex-col items-center justify-center space-y-6 z-10">
+    <h2 class="text-4xl text-yellow-600 cursor-default text-shadow text-black font-zelda">uma carta de amor a franquia</h2>
+
+    <img
+      src="img/Zelda Logo.png"
+      alt="zeldalogo"
+      class="w-full max-w-2xl h-auto object-contain rounded-xl filter drop-shadow-[10px_10px_10px_black]"
+    />
+
+    <h3 class="text-3xl text-red-600 cursor-default text-shadow text-black font-zelda" >Explore os momentos mais impactantes dos jogos 3D</h3>
+    <h2 class="text-yellow-200 font-zelda text-2xl tracking-wide">feito por - gabriel majeau</h2>
+  </div>
+
+  
+
+</section>
+
+
+      <!-- Ocarina of Time -->
+<section
+  id="ocarina"
+  class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-green-900"
+>
+  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+    <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210085/oot_x4f5uy.mp4" type="video/mp4" />
+  </video>
+
+        <div class="z-10">
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/oot.mp3">
+  <img src="img/oot.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_orange]" />
+</a>
+
+        </div>
+      </section>
+
+      <!-- Majora's Mask -->
+      <section
+        id="majoras"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-purple-900"
+      >
+        <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210096/mm_itktbq.mp4" type="video/mp4" />
+        </video>
+
+        <div class="z-10">
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/mm.wav">
+  <img src="img/mm.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_pink]" />
+</a>
+        </div>
+      </section>
+
+      <!-- Wind Waker -->
+      <section
+        id="windwaker"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-blue-900"
+      >
+      <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749210093/ww_vpd6c2.mp4" type="video/mp4" />
+        </video>
+
+        <div class="z-10">
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/ww.wav">
+  <img src="img/ww.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_blue]" />
+</a>
+        </div>
+      </section>
+
+      <!-- Twilight Princess -->
+      <section
+        id="twilight"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-black"
+      >
+      <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749212725/tp_vpafzh.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/tp.wav">
+  <img src="img/tp.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_white]" />
+</a>
+        </div>
+      </section>
+
+      <!-- Skyward Sword -->
+      <section
+        id="skyward"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-white-900"
+      >
+       <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749212204/ss_gurn3q.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/ss.wav">
+  <img src="img/ss.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_white]" />
+</a>
+        </div>
+      </section>
+
+      <!-- Breath of the Wild -->
+      <section
+        id="botw"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-blue-900"
+      >
+       <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749214407/botw_hi0vxh.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/botw.mp3">
+  <img src="img/botw.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_black]" />
+</a>
+        </div>
+      </section>
+
+      <!-- Tears of the Kingdom -->
+      <section
+        id="tears"
+        class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-green-900"
+      >
+       <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-75 z-0">
+          <source src="https://res.cloudinary.com/dhvdalhpw/video/upload/v1749215110/totk_klehuu.mp4" type="video/mp4" />
+        </video>
+        <div>
+          <a href="ocarina.html" class="fade-link" data-sound="musicas/button/totk.mp3">
+  <img src="img/totk.webp" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain hover:scale-110 transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_black]" />
+</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
