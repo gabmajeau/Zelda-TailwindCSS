@@ -13,7 +13,8 @@
 Made with:
 
 1. HTML
-2. Tailwind CSS
-3. Javascript
+2. CSS
+3. Tailwind CSS
+4. Javascript
 
 ---
