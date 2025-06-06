@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocarina of Time</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-800 text-white min-h-screen relative overflow-hidden">
+
+  <!-- Logo no canto superior direito -->
+  <img src="../img/oot.webp" alt="Logo Ocarina" class="absolute top-8 right-12 w-40 h-auto z-10 drop-shadow-[0_0_7px_black]">
+
+  <!-- Botão de voltar -->
+  <a href="/index.html">
+    <img src="../img/paginas/voltar.png" alt="Voltar" class="absolute bottom-30 left-4 w-14 h-auto cursor-pointer hover:scale-105 transition">
+  </a>
+
+  <main class="flex flex-col items-center justify-center text-center px-4 pt-24 space-y-8">
+    <!-- Título -->
+    <h1 class="text-4xl font-bold">Retirando a espada do pedestal e se tornando adulto</h1>
+
+    <!-- Vídeo central -->
+    <div class="w-full max-w-4xl">
+      <video class="w-full rounded-xl shadow-lg" autoplay muted loop>
+        <source src="/assets/ocarina-momento.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+    <!-- Parágrafo -->
+    <p class="text-lg max-w-2xl">Neste momento épico, o jogo muda, link se torna crescido e o mundo deixa de ser aquele que conhecemos, se tornando perigoso de cheio de desafios sombrios.</p>
+  </main>
+
+</body>
+</html>
