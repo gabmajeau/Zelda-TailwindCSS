@@ -3,33 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Majoras Mask</title>
+  <title>Majora's Mask</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body class="bg-purple-900 text-white min-h-screen relative overflow-hidden">
+  <div id="fadeOverlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-700 z-50"></div>
 
-  <!-- Logo no canto superior direito -->
-  <img src="../img/mm.webp" alt="Logo Ocarina" class="absolute top-8 right-12 w-40 h-auto z-10 drop-shadow-[0_0_7px_black]">
 
-  <!-- Botão de voltar -->
-  <a href="/index.html">
-    <img src="../img/paginas/voltar.png" alt="Voltar" class="absolute bottom-30 left-4 w-14 h-auto cursor-pointer hover:scale-105 transition">
-  </a>
 
-  <main class="flex flex-col items-center justify-center text-center px-4 pt-24 space-y-8">
-    <!-- Título -->
-    <h1 class="text-4xl font-bold">Retirando a espada do pedestal e se tornando adulto</h1>
+   <main class="flex flex-col items-center justify-center text-center px-4 pt-24 space-y-8">
 
-    <!-- Vídeo central -->
-    <div class="w-full max-w-4xl">
-      <video class="w-full rounded-xl shadow-lg" autoplay muted loop>
-        <source src="/assets/ocarina-momento.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-      </video>
-    </div>
+    <h1 class="text-4xl font-bold text-purple-300">O fim da jornada</h1>
+   
 
-    <!-- Parágrafo -->
-    <p class="text-lg max-w-2xl">Neste momento épico, o jogo muda, link se torna crescido e o mundo deixa de ser aquele que conhecemos, se tornando perigoso de cheio de desafios sombrios.</p>
+<div class="relative w-full max-w-md mx-auto">
+  <img src="../img/paginas/tubo.png" class="w-full drop-shadow-[0_0_30px_black]" />
+  <video 
+    class=" absolute top-[9%] left-[7%] w-[86%] h-[72%] object-cover"
+    src="https://res.cloudinary.com/dny7fgol0/video/upload/v1749476429/Untitled_video_-_Made_with_Clipchamp_1_fxpmg0.mp4"
+    controls loop
+  ></video>
+  </div>
+
+
+<a href="ocarina.html" class=" fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changepage.wav">
+  <img src="../img/botoes/Z.png" alt="Voltar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+</a>
+
+<a href="windwaker.html" class="absolute top-1/2 right-4 -translate-y-1/2 z-10">
+  <img src="../img/botoes/R.png" alt="Avançar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+</a>
+
+
+
+  
+    <p class="text-lg max-w-2xl text-purple-300">Além de ser a ultima vez que jogamos com o herói do tempo, alem do arrependimento do Skull Kid e suas fadas o acolhendo.</p>
   </main>
 
 </body>

@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tears of the kingdom</title>
+  <title>Tears of the Kingdom</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body class="bg-red-900 text-white min-h-screen relative overflow-hidden">
+<body class="bg-green-300 text-white min-h-screen relative overflow-hidden">
+  <div id="fadeOverlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-700 z-50"></div>
 
-  <!-- Logo no canto superior direito -->
-  <img src="../img/totk.webp" alt="Logo Ocarina" class="absolute top-8 right-12 w-40 h-auto z-10 drop-shadow-[0_0_7px_black]">
 
-  <!-- Botão de voltar -->
-  <a href="/index.html">
-    <img src="../img/paginas/voltar.png" alt="Voltar" class="absolute bottom-30 left-4 w-14 h-auto cursor-pointer hover:scale-105 transition">
+
+   <main class="flex flex-col items-center justify-center text-center min-h-screen px-4 pt-24 space-y-8">
+
+  <h1 class="text-4xl font-bold drop-shadow-[0_0_30px_black]">A ultima queda</h1>
+
+  <!-- TV com vídeo centralizado -->
+  <div class="relative w-[350px] sm:w-[400px] md:w-[500px] lg:w-[800px] mx-auto">
+    <img src="../img/paginas/switch2.webp" class="w-full drop-shadow-[0_0_30px_black]" />
+    <video 
+      class="absolute top-[5%] left-[15%] w-[70%] h-[90%] object-cover rounded"
+      src="https://res.cloudinary.com/dny7fgol0/video/upload/v1749478922/totk_vrqtkj.mp4"
+      controls loop
+    ></video>
+  </div>
+
+  <!-- Botões esquerda/direita -->
+  <a href="botw.html" class="fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changepage.wav">
+    <img src="../img/botoes/Z.png" alt="Voltar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
   </a>
 
-  <main class="flex flex-col items-center justify-center text-center px-4 pt-24 space-y-8">
-    <!-- Título -->
-    <h1 class="text-4xl font-bold">Retirando a espada do pedestal e se tornando adulto</h1>
+  <a href="../index.html" class="absolute top-1/2 right-4 -translate-y-1/2 z-10">
+    <img src="../img/botoes/R.png" alt="Avançar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+  </a>
 
-    <!-- Vídeo central -->
-    <div class="w-full max-w-4xl">
-      <video class="w-full rounded-xl shadow-lg" autoplay muted loop>
-        <source src="/assets/ocarina-momento.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-      </video>
-    </div>
+  <p class="text-lg max-w-2xl font-bold drop-shadow-[0_0_15px_black] ">
+    Depois de curar a princesa Zelda de sua "maldição", temos que resgata-la de uma queda livre, ao som de "Zelda' Lullaby", gerando uam cena emocionante.
+  </p>
+</main>
 
-    <!-- Parágrafo -->
-    <p class="text-lg max-w-2xl">Neste momento épico, o jogo muda, link se torna crescido e o mundo deixa de ser aquele que conhecemos, se tornando perigoso de cheio de desafios sombrios.</p>
-  </main>
 
 </body>
 </html>
