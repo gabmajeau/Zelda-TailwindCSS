@@ -42,9 +42,11 @@
   id="inicio"
   class="h-screen bg-green-900 relative flex flex-col items-center justify-center text-center snap-start px-4 py-10"
 >
- 
-  <img src="img/moldura.png" class="absolute bottom-50 left-5 w-25 h-auto" alt="decoração esquerda" />
-  <img src="img/moldura 2.png" class="absolute bottom-50 right-5 w-25 h-auto" alt="decoração direita" />
+ <img src="img/textura2.jpg" class="absolute w-full h-full object-cover opacity-10 z-0">
+  <img src="img/moldura.png" class="absolute bottom-50 left-5 w-25 h-auto hidden md:block" alt="decoração esquerda" />
+  <img src="img/moldura 2.png" class="absolute bottom-50 right-5 w-25 h-auto hidden md:block" alt="decoração direita" />
+  <img src="img/moldura 3.png" class="absolute bottom-16 w-25 h-auto block md:hidden" alt="decoração mobile" />
+  <img src="img/moldura 3.png" class="absolute top-10 w-15 h-auto block md:hidden" alt="decoração mobile" />
 
   <button
     id="startMusic"
@@ -66,7 +68,7 @@
     />
 
     <h3 class="text-3xl text-red-600 cursor-default text-shadow text-black font-zelda" >Explore os momentos mais impactantes dos jogos 3D</h3>
-    <h2 class="text-yellow-200 font-zelda text-2xl tracking-wide">feito por - gabriel majeau</h2>
+    <h2 class="text-yellow-200 font-zelda text-2xl text-shadow tracking-wide">feito por - gabriel majeau</h2>
   </div>
 
   
@@ -188,13 +190,16 @@
         id="aboutme"
         class="h-screen relative overflow-hidden flex flex-col justify-center items-center text-center snap-start px-4 bg-gray-900"
       >
-  <img src="img/moldura.png" class="absolute bottom-50 left-5 w-25 h-auto" alt="decoração esquerda" />
-  <img src="img/moldura 2.png" class="absolute bottom-50 right-5 w-25 h-auto" alt="decoração direita" />
+      <img src="img/textura.jpg" class="absolute w-full h-full object-cover opacity-10 z-0">
+  <img src="img/moldura.png" class="absolute bottom-50 left-5 w-25 h-auto hidden md:block" alt="decoração esquerda" />
+  <img src="img/moldura 2.png" class="absolute bottom-50 right-5 w-25 h-auto hidden md:block" alt="decoração direita" />
+  <img src="img/moldura 3.png" class="absolute bottom-16 w-25 h-auto block md:hidden" alt="decoração mobile" />
+  <img src="img/moldura 4.png" class="absolute top-12 w-15 h-auto block md:hidden" alt="decoração mobile" />
         <div>
           <a id="link-portifolio" href="https://gabmajeau.github.io/portifolio/ptbr/index.html" class="fade-link" data-sound="musicas/button/grito.wav">
   <img id="eu"src="img/aboutme.png" alt="Ocarina of Time" class="w-full max-w-md h-auto object-contain transition duration-1000 cursor-pointer filter drop-shadow-[0_0_40px_black]" />
 </a>
-<h3 class=" font-zelda text-2xl tracking-wide">muito obrigado</h3>
+<h3 class=" font-zelda text-shadow text-2xl tracking-wide">muito obrigado</h3>
         </div>
       </section>
     </main>
