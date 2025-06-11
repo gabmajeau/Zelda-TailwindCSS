@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skyward Sword</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
   <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../img/Ze.png" type="image/x-icon">
 </head>
-<body class="bg-gray-200 text-white min-h-screen relative overflow-hidden">
+<body class="relative h-screen bg-gray-300" style="cursor: url('../img/cursor/wiiu.png'), auto;">
+   <div class="absolute inset-0 bg-[url('../img/paginas/WPPSS.webp')] bg-cover bg-center opacity-70"></div>
   <div id="fadeOverlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-700 z-50"></div>
 
 
 
-   <main class="flex flex-col items-center justify-center text-center min-h-screen px-4 pt-24 space-y-8">
+   <main class="flex flex-col items-center justify-center text-center min-h-screen px-4 pt-24 space-y-8 relative z-10">
 
-  <h1 class="text-4xl font-bold text-blue-400">A promessa de Demise</h1>
-
-  <!-- TV com vídeo centralizado -->
+ 
   <div class="relative w-[350px] sm:w-[400px] md:w-[500px] lg:w-[600px] mx-auto">
-    <img src="../img/paginas/plasma.png" class="w-full drop-shadow-[0_0_30px_black]" />
+    <img src="../img/paginas/plasma.png" class="w-full drop-shadow-[0_0_30px_white]" />
     <video 
       class="absolute top-[3%] left-[2%] w-[96%] h-[80%] object-cover rounded"
       src="https://res.cloudinary.com/dny7fgol0/video/upload/v1749478481/ss_tx4zmb.mp4"
@@ -27,17 +27,17 @@
     ></video>
   </div>
 
-  <!-- Botões esquerda/direita -->
-  <a href="twilight.html" class="fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changepage.wav">
-    <img src="../img/botoes/Z.png" alt="Voltar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+
+  <a href="twilight.html" class="fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changess.wav">
+    <img src="../img/botoes/LSS.png" alt="Voltar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
   </a>
 
-  <a href="botw.html" class="absolute top-1/2 right-4 -translate-y-1/2 z-10">
-    <img src="../img/botoes/R.png" alt="Avançar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+  <a href="botw.html" class="fade-link absolute top-1/2 right-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changess.wav">
+    <img src="../img/botoes/RSS.png" alt="Avançar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
   </a>
 
-  <p class="text-lg max-w-2xl font-bold text-blue-400">
-    Ao derrotar o Rei Demônio, Link ouve a promessa de Demise, onde ele confirma que votlara em outras encarnações trazendo ao mal junto dele.
+  <p class="bg-amber-900 bg-opacity-70 px-6 py-8 rounded-2xl text-lg max-w-2xl text-yellow-100 font-bold">
+    Ao derrotar o <span class="text-red-300">Rei Demônio </span>, Link ouve a promessa de Demise, onde ele confirma que votlara em outras encarnações trazendo ao mal junto dele.
   </p>
 </main>
 

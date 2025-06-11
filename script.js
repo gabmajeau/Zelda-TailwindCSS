@@ -14,6 +14,7 @@ window.addEventListener("load", () => {
     skyward: document.getElementById("audio-skyward"),
     botw: document.getElementById("audio-botw"),
     tears: document.getElementById("audio-tears"),
+    aboutme: document.getElementById("audio-aboutme"),
   };
 
   const volumeControl = document.getElementById("volume-control");
@@ -104,7 +105,7 @@ function pararMusicaAtual() {
 }
 
 links.forEach(link => {
-  link.addEventListener('click', e => {
+  link.addEventListener('click', async e => {
     e.preventDefault();
     const target = link.getAttribute('href');
     const soundSrc = link.getAttribute('data-sound');
@@ -112,15 +113,37 @@ links.forEach(link => {
     pararMusicaAtual();
 
     const audio = new Audio(soundSrc);
-    audio.play();
 
     overlay.classList.remove('pointer-events-none');
     requestAnimationFrame(() => {
       overlay.classList.add('opacity-100');
     });
 
-    setTimeout(() => {
+    try {
+      await audio.play();
+
+      // Espera o som terminar
+      audio.addEventListener("ended", () => {
+        window.location.href = target;
+      });
+    } catch (err) {
+      // Se erro ao tocar som, redireciona mesmo assim
       window.location.href = target;
-    }, 2000);
+    }
   });
 });
+
+const foto = document.getElementById("eu");
+const link = document.getElementById("link-portifolio");
+
+link.addEventListener("click", (e) => {
+  e.preventDefault(); // Impede o redirecionamento imediato
+  foto.src = "img/aboutme2.png"; // Troca a imagem
+
+  setTimeout(() => {
+    window.location.href = link.href; // Redireciona após 1 segundo
+  }, 1000);
+});
+
+
+

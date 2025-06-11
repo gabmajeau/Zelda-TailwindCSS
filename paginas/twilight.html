@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Twilight Princess</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js" defer></script>
+  <script src="../script.js" defer></script>
   <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../simg/Ze.png" type="image/x-icon">
 </head>
-<body class="bg-gray-800 text-white min-h-screen relative overflow-hidden">
+<body class="relative h-screen bg-gray-800">
+   <div class="absolute inset-0 bg-[url('../img/paginas/WPPTP.jpg')] bg-cover bg-center opacity-70"></div>
   <div id="fadeOverlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-700 z-50"></div>
 
 
 
-   <main class="flex flex-col items-center justify-center text-center min-h-screen px-4 pt-24 space-y-8">
+   <main class="flex flex-col items-center justify-center text-center min-h-screen px-4 pt-36 space-y-8 relative z-10">
 
-  <h1 class="text-4xl font-bold">A despedida de Midna</h1>
+ 
 
-  <!-- TV com vídeo centralizado -->
   <div class="relative w-[350px] sm:w-[400px] md:w-[500px] lg:w-[440px] mx-auto">
-    <img src="../img/paginas/tubo2.png" class="w-full drop-shadow-[0_0_30px_black]" />
+    <img src="../img/paginas/tubo2.png" class="w-full drop-shadow-[0_0_30px_white]" />
     <video 
       class="absolute top-[8%] left-[6%] w-[88%] h-[74%] object-cover rounded"
       src="https://res.cloudinary.com/dny7fgol0/video/upload/v1749477576/tp_sasj59.mp4"
@@ -27,17 +28,17 @@
     ></video>
   </div>
 
-  <!-- Botões esquerda/direita -->
-  <a href="windwaker.html" class="fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changepage.wav">
-    <img src="../img/botoes/Z.png" alt="Voltar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+
+  <a href="windwaker.html" class="fade-link absolute top-1/2 left-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changetp.wav">
+    <img src="../img/botoes/LTP.png" alt="Voltar" class="w-22 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
   </a>
 
-  <a href="skyward.html" class="absolute top-1/2 right-4 -translate-y-1/2 z-10">
-    <img src="../img/botoes/R.png" alt="Avançar" class="w-14 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
+  <a href="skyward.html" class="fade-link absolute top-1/2 right-4 -translate-y-1/2 z-10" data-sound="../musicas/button/changetp.wav">
+    <img src="../img/botoes/RTP.png" alt="Avançar" class="w-22 h-auto cursor-pointer hover:scale-105 transition drop-shadow-[0_0_15px_black]">
   </a>
 
-  <p class="text-lg max-w-2xl font-bold">
-    Após derrotar Ganondorf, Midna retoma sua verdadeira forma. Zelda e Link acompanham a amiga até o espelho do crepusculo, e participam de uma emocionante despedida.
+  <p class="bg-black bg-opacity-30 px-4 py-4 rounded text-lg max-w-2xl text-white font-bold">
+    Após derrotar Ganondorf,<span class="text-blue-200"> Midna</span> retoma sua verdadeira forma. Zelda e Link acompanham a amiga até o espelho do crepusculo, e participam de uma emocionante despedida.
   </p>
 </main>
 
