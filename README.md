@@ -3,7 +3,7 @@
 Este é um projeto de homenagem à franquia **The Legend of Zelda**, criado enquanto estudava **Tailwind CSS** e **JavaScript**. A ideia foi destacar momentos marcantes dos jogos, com foco na experiência do usuário (UX) e no uso de transições e sons para criar imersão.
 
 ## Upado no GitHub Pages:
-[ACESSE](https://gabmajeau.github.io/zelda-site)
+ [ACESSE](https://gabmajeau.github.io/zelda-site)
 
 ## Tecnologias 
 - HTML5
@@ -21,7 +21,7 @@ Este é um projeto de homenagem à franquia **The Legend of Zelda**, criado enqu
 
 ---
 
-![Demonstração em GIF](zelda.png)
+[Clique para ver uma demonstração](zelda.mp4)
 
 ---
 
